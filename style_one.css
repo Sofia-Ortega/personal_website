@@ -1,0 +1,50 @@
+/* Colors::after
+black: #1A1B25
+blue: #9FC4FC
+dark purple: #533E76
+neon_purple: #822E81
+off_purple: #9C626F
+yello: #F0F2A6
+pink: #FFDADA
+
+*/
+
+* {
+  background-color: black;
+  color: #9fc4fc;
+  font-family: "Kadwa";
+  text-transform: lowercase;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav > div {
+  margin: 10px;
+}
+
+/* --------------- Config ---------------- */
+.large-font {
+  font-size: 64px;
+}
+
+.medium-font {
+  font-size: 32px;
+}
+
+.small-font {
+  font-size: 24px;
+}
+
+.bold {
+  font-weight: bold;
+}
