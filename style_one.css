@@ -67,12 +67,15 @@ nav {
   max-width: 700px;
 }
 
+.blurb {
+  text-transform: none;
+}
+
 /* ------------------ projects ---------------- */
 #projects {
   background-color: #1a1b25;
-  min-height: 800px;
-  height: 100vh;
-  padding: 0 50px;
+  min-height: 100vh;
+  padding: 50px 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
