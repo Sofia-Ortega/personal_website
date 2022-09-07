@@ -17,6 +17,9 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* header {
   background-color: #1a1b25;
 } */
@@ -27,7 +30,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 70px;
+  padding: 0 30px;
 }
 
 #links {
@@ -251,4 +254,5 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
