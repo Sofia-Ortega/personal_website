@@ -59,17 +59,16 @@ nav {
 }
 
 .personal-pic {
-  display: none;
+  display: none !important;
 }
 
 .intro-heading {
   color: #ffec64;
 }
 
-#intro,
-blurb {
+#intro .blurb {
   color: #ffdada;
-  max-width: 700px;
+  max-width: 550px;
 }
 
 .blurb {
@@ -87,7 +86,7 @@ blurb {
   justify-content: center;
 }
 
-#projects > h2 {
+#projects > div > h2 {
   color: #ffdada;
   text-align: center;
 }
@@ -102,7 +101,7 @@ blurb {
   background-color: #533e76;
   color: #f5f5f5;
   width: 350px;
-  height: 250px;
+  height: 275px;
   margin: 2px;
 }
 
@@ -122,6 +121,9 @@ blurb {
   color: #f5f5f5;
 }
 
+.learn-link {
+  display: none;
+}
 /* ------------------ experience ---------------- */
 #experience {
   background-color: #ffdada;
