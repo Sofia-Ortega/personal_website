@@ -3,5 +3,40 @@ body {
   font-family: "Kadwa";
   text-transform: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+}
+body {
+  margin: 0 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1a1b25;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+}
+
+#links > * {
+  margin: 10px;
+}
+
+#logo {
+  font-size: 52px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 728px) {
+  .no_small_display {
+    display: none;
+  }
 }

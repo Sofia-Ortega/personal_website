@@ -259,3 +259,9 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
+@media (max-width: 728px) {
+  .no_small_display {
+    display: none;
+  }
+}
