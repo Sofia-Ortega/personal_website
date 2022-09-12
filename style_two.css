@@ -61,11 +61,10 @@ nav {
 
 /* ------------- PROJECTS ---------------- */
 #projects {
-  min-height: 100vh;
-  /* padding: 0px 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
 }
 
 #project-list {
@@ -98,6 +97,14 @@ nav {
   padding: 10px 0 -10px 0;
 }
 
+#experience {
+  max-width: 1076px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 footer {
   padding: 50px 70px;
   display: flex;
@@ -108,8 +115,7 @@ footer {
 
 .icons {
   margin: 0 20px;
-  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
-    brightness(119%) contrast(119%);
+  filter: brightness(15%);
 }
 /* ------------- CONFIG ------------- */
 a {
