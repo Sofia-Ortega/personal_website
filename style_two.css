@@ -1,14 +1,16 @@
 *,
 body {
-  font-family: "Kadwa";
+  font-family: "Poppins", sans-serif;
   text-transform: none;
   padding: 0;
-  margin: 0 auto;
-}
-body {
-  margin: 0 30px;
+  margin: 0;
+  color: #1a1b25;
 }
 
+body {
+  margin: 0 50px;
+}
+/* ------------------- NAVIGATION --------------- */
 nav {
   display: flex;
   flex-direction: row;
@@ -30,13 +32,121 @@ nav {
   font-size: 52px;
 }
 
+#intro {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.personal-pic {
+  width: 200px;
+  height: auto;
+  border: 2px solid #1a1b25;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.intro-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.blurb {
+  max-width: 600px;
+}
+
+/* ------------- PROJECTS ---------------- */
+#projects {
+  min-height: 100vh;
+  /* padding: 0px 50px; */
+}
+
+#project-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.project-container {
+  border: 1px solid #1a1b25;
+  color: #1a1b25;
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+  margin: 20px 20px 20px 0;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 300px;
+}
+
+.project-content {
+  padding: 25px;
+}
+
+.learn-link {
+  color: #1b7386;
+  font-weight: bold;
+  padding: 10px 0 -10px 0;
+}
+
+footer {
+  padding: 50px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
+}
+
+.icons {
+  margin: 0 20px;
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
+    brightness(119%) contrast(119%);
+}
+/* ------------- CONFIG ------------- */
 a {
   text-decoration: none;
   color: inherit;
+}
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 16px;
 }
 
 @media (max-width: 728px) {
   .no_small_display {
     display: none;
   }
+}
+
+.link-icon {
+  display: none;
+}
+
+.no-display-2 {
+  display: none !important;
+}
+
+.underline {
+  font-weight: bold;
 }

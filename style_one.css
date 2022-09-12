@@ -58,11 +58,16 @@ nav {
   align-items: center;
 }
 
-#intro > h1 {
+.personal-pic {
+  display: none;
+}
+
+.intro-heading {
   color: #ffec64;
 }
 
-#intro > p {
+#intro,
+blurb {
   color: #ffdada;
   max-width: 700px;
 }
