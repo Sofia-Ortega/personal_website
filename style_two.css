@@ -161,8 +161,18 @@ p {
 }
 
 @media (max-width: 728px) {
+  body {
+    margin: 0 10px;
+  }
   .no_small_display {
     display: none;
+  }
+  #links > * > h3 {
+    font-size: 14px;
+  }
+  #project-list {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
