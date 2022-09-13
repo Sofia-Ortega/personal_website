@@ -97,16 +97,34 @@ nav {
   padding: 10px 0 -10px 0;
 }
 
-#experience {
-  max-width: 1076px;
+#experience,
+#aggie-coding-club {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+.experience-container {
+  max-width: 966px;
+  margin-top: 80px;
+}
+
+.box-container {
+  margin: 40px 0;
+}
+
+.aggie-coding-club-container {
+  max-width: 966px;
+}
+
+.box-body {
+  max-width: 600px;
+}
+
 footer {
-  padding: 50px 70px;
+  margin-top: 10px;
+  padding: 20px 70px;
   display: flex;
   align-items: center;
   justify-content: center;
