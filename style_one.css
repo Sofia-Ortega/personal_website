@@ -271,4 +271,41 @@ a {
   .no_small_display {
     display: none;
   }
+  #links > * > h3 {
+    font-size: 16px;
+  }
+}
+#aggie-coding-club .fancy-link {
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(to right, rgb(83, 62, 118), rgb(83, 62, 118));
+  background-size: 100% 0.2em, 0 0.2em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 450ms;
+}
+#aggie-coding-club .fancy-link:hover,
+#aggie-coding-club .fancy-link:focus {
+  background-size: 0 0.25em, 100% 0.25em;
+}
+
+.fancy-link {
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(to right, rgba(255, 236, 100, 1), rgba(255, 236, 100, 1));
+  background-size: 100% 0.2em, 0 0.2em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 450ms;
+}
+
+.fancy-link:hover,
+.fancy-link:focus {
+  background-size: 0 0.25em, 100% 0.25em;
 }
