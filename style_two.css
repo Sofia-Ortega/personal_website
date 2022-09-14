@@ -73,6 +73,7 @@ nav {
   min-width: 120px;
   margin-bottom: 50px;
   transition: all ease 0.2s;
+  cursor: pointer;
 }
 
 .change-btn:hover {

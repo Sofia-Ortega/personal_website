@@ -1,8 +1,10 @@
 function load_style() {
-  page_style = localStorage.getItem("pg_style", "style_one.css");
-  if (page_style === null) {
+  page_style = localStorage.getItem("pg_style");
+  if (page_style == null) {
+    localStorage.setItem("pg_style", "style_one.css");
     page_style = "style_one.css";
   }
+  console.log("page_style: ", page_style);
   document.getElementById("page_style").setAttribute("href", page_style);
 }
 
@@ -21,3 +23,5 @@ function style_two() {
   localStorage.setItem("pg_style", "style_two.css");
   load_style();
 }
+
+load_style();
