@@ -41,7 +41,7 @@ nav {
 
 .personal-pic {
   width: 200px;
-  height: auto;
+  height: 270px;
   border: 2px solid #1a1b25;
   border-radius: 20px;
   margin: 0 10px;
@@ -57,6 +57,28 @@ nav {
 
 .blurb {
   max-width: 600px;
+}
+
+.change-btn {
+  color: #1a1a1a;
+  border: 1px solid #1b7386;
+  background: #d7f8ff;
+  font-size: 17px;
+  padding: 7px 50px;
+  font-weight: normal;
+  margin: 6px 0;
+  margin-right: 12px;
+  display: inline-block;
+  text-decoration: none;
+  min-width: 120px;
+  margin-bottom: 50px;
+  transition: all ease 0.2s;
+}
+
+.change-btn:hover {
+  background-color: #1b7386;
+  color: white;
+  border: none;
 }
 
 /* ------------- PROJECTS ---------------- */

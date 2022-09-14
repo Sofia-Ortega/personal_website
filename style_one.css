@@ -64,6 +64,29 @@ nav {
 
 .intro-heading {
   color: #ffec64;
+  padding-bottom: 0;
+  margin-bottom: -29px;
+}
+
+.change-btn {
+  color: #1a1a1a;
+  background: #ffdada;
+  font-size: 17px;
+  padding: 7px 50px;
+  font-weight: normal;
+  margin: 6px 0;
+  margin-right: 12px;
+  display: inline-block;
+  text-decoration: none;
+  min-width: 120px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  transition: box-shadow ease 0.2s, padding ease 0.2s;
+  margin-bottom: 50px;
+}
+
+.change-btn:hover {
+  box-shadow: 0 20px 50px -4px rgba(0, 0, 0, 0.9);
+  padding: 8px 52px;
 }
 
 #intro .blurb {

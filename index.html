@@ -14,10 +14,13 @@
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style_two.css" />
+    <!-- <link rel="stylesheet" href="style_one.css" /> -->
+    <!-- <link rel="stylesheet" href="style_two.css" /> -->
+    <link id="page_style" rel="stylesheet" href="style_one.css" />
     <title>Sofia Ortega</title>
   </head>
   <body>
+    <script src="functions.js"></script>
     <header>
       <nav>
         <a href="#">
@@ -47,10 +50,21 @@
           src="./assets/personal_pic.jpg"
         />
         <div class="intro-text">
-          <h1 class="intro-heading">Howdy!</h1>
+          <div>
+            <h1 class="intro-heading">Howdy!</h1>
+            <button class="change-btn capitalize" onclick="handle_click()">
+              Change!
+            </button>
+          </div>
           <p class="blurb">
             I'm an Aggie, Class of '24. I love to code. When I'm not coding, you
-            can find me looking for the next delicious meal, or learning Korean!
+            can find me looking for the next delicious meal, or learning
+            Korean!I am the LOUDEST and PROUDEST member of the Fighting' Texas
+            Aggies Class of '24! I am studying Computer Engineer! I spend a lot
+            of time working on events and workshops for the Aggie Coding Club.
+            Currently, I've participated as a Workshop Officer, Project Manager,
+            and general member. I love to teach and have some youtube
+            programming tutorial videos in the progressl
           </p>
         </div>
       </section>
@@ -132,7 +146,15 @@
 
     <section id="experience">
       <div class="experience-container">
-        <h2 class="text-center section-header">Experience</h2>
+        <h2 class="text-center section-header">
+          <a
+            class="fancy-link"
+            href="./assets/Sofia_Ortega_Resume.pdf"
+            target="_blank"
+          >
+            Qualifications</a
+          >
+        </h2>
         <div class="box-list">
           <div class="box-container exp-container">
             <div class="box-content">
@@ -284,6 +306,49 @@
                   >
                   and workshops, since first semester at A&M, meeting new people
                   and always learning new coding technologies
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="experience-container">
+        <h2 class="text-center section-header">Community</h2>
+        <div class="box-list">
+          <div class="box-container exp-container">
+            <div class="box-content">
+              <div class="box-heading-container exp-heading-container">
+                <h6 class="capitalize">Spring 2021 - Now</h6>
+
+                <h3>Workshop officer</h3>
+              </div>
+              <div class="exp-body blurb">
+                <p>
+                  Volunteer at Aggie Coding Club in order to create weekly
+                  workshops. Aim is to assist freshman and anyone starting out
+                  with coding. Provides place to learn and grow with community
+                  of learners.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider exp-divider"></div>
+
+          <div class="box-container exp-container">
+            <div class="box-content">
+              <div class="box-heading-container exp-heading-container">
+                <h6 class="capitalize">Fall 2020 - Now</h6>
+                <h3>Church Piano Player</h3>
+              </div>
+              <div class="exp-body blurb">
+                <p>
+                  Play and sing during worship service at St. Marys. Take time
+                  to prepare and practice in order to give people a place to
+                  praise, worship, and replenish themselves spiritually
                 </p>
               </div>
             </div>
