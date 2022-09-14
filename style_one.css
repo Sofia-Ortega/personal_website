@@ -124,6 +124,7 @@ nav {
 .learn-link {
   display: none;
 }
+
 /* ------------------ experience ---------------- */
 #experience {
   background-color: #ffdada;
@@ -132,6 +133,7 @@ nav {
 
 .exp-container {
   background-color: #34396b;
+  margin: 0 10px;
 }
 
 .exp-heading-container > h6 {
@@ -219,6 +221,13 @@ footer > * {
   margin-top: -16px;
 }
 
+@media (max-width: 768px) {
+  .box-container {
+    width: auto;
+    height: 360px;
+    margin: 0 5px;
+  }
+}
 .divider {
   height: 100px;
   width: 0;
@@ -268,11 +277,11 @@ a {
 }
 
 @media (max-width: 728px) {
-  .no_small_display {
+  .no-small-display {
     display: none;
   }
-  #links > * > h3 {
-    font-size: 16px;
+  h1 {
+    font-size: 80px;
   }
 }
 #aggie-coding-club .fancy-link {
