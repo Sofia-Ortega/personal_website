@@ -207,3 +207,9 @@ p {
   bottom: 0;
   height: 100%;
 }
+
+@media (max-width: 728px) {
+  .no-small-display {
+    display: none;
+  }
+}
