@@ -145,12 +145,12 @@ nav {
 
 /* ---------- Aggie Coding Club ----------- */
 #aggie-coding-club {
-  background-color: #34396b;
+  background-color: #533e76;
   padding: 120px 0;
 }
 
 .acc-section-header {
-  color: #ffec64;
+  color: #f5f5f5;
 }
 
 .acc-container {
@@ -202,6 +202,7 @@ footer > * {
   justify-content: center;
   width: 500px;
   height: 250px;
+  margin: 0 10px;
 }
 
 .box-content {
@@ -210,6 +211,14 @@ footer > * {
 
 .box-heading-container > h3 {
   margin-top: -16px;
+}
+
+@media (max-width: 768px) {
+  .box-container {
+    width: auto;
+    height: 360px;
+    margin: 0 5px;
+  }
 }
 
 .divider {
@@ -258,4 +267,16 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+@media (max-width: 728px) {
+  .no-small-display {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .no-medium-display {
+    display: none;
+  }
 }
