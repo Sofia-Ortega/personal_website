@@ -17,6 +17,10 @@ body {
   margin: 0;
 }
 
+body {
+  background-color: #1a1b25;
+
+}
 html {
   scroll-behavior: smooth;
 }
@@ -50,6 +54,20 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 2px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  border: 10px solid pink;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .chip {
@@ -108,6 +126,11 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+#project-list .project-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .project-container {
