@@ -8,6 +8,16 @@ yello: #FFEC64
 pink: #FFDADA
 
 */
+:root {
+--white: #f5f5f5;
+--black: #1A1B25;
+--blue: #9FC4FC;
+--dark-purple: #533E76;
+--neon-purple: #34396B;
+--off-pink: #9C626F;
+--yellow: #FFEC64;
+--pink: #FFDADA;
+}
 
 *,
 body {
@@ -20,12 +30,10 @@ body {
 html {
   scroll-behavior: smooth;
 }
-/* header {
-  background-color: #1a1b25;
-} */
+
 nav {
-  background-color: #1a1b25;
-  color: #9fc4fc;
+  background-color: var(--black);
+  color: var(--blue);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -64,7 +72,7 @@ nav {
 /* -------------- Intro ---------------- */
 #intro {
   text-align: center;
-  background-color: #34396b;
+  background-color: var(--neon-purple);
   height: 100vh;
   padding: 0 50px;
   display: flex;
@@ -74,11 +82,11 @@ nav {
 }
 
 #intro > h1 {
-  color: #f5f5f5;
+  color: var(--white);
 }
 
 .blurb > p {
-  color: #ffdada;
+  color: var(--pink);
   max-width: 700px;
 }
 
@@ -89,7 +97,7 @@ nav {
 
 /* ------------------ projects ---------------- */
 #projects {
-  background-color: #1a1b25;
+  background-color: var(--black);
   min-height: 100vh;
   padding: 50px 50px;
   display: flex;
@@ -99,7 +107,7 @@ nav {
 }
 
 #projects > h2 {
-  color: #ffdada;
+  color: var(--pink);
   text-align: center;
 }
 
@@ -111,8 +119,8 @@ nav {
 }
 
 .project-container {
-  background-color: #533e76;
-  color: #f5f5f5;
+  background-color: var(--dark-purple);
+  color: var(--white);
   width: 350px;
   height: 300px;
   margin: 2px;
@@ -135,81 +143,81 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: #ffdada;
+  color: var(--pink);
 }
 
 
 .project-blurb {
-  color: #f5f5f5;
+  color: var(--white);
   padding-top: 10px;
   line-height: 1.5rem;
 }
 
 .project-content > .chip-container > div {
-  background-color: #34396b;
-  color: #f5f5f5;
+  background-color: var(--neon-purple);
+  color: var(--white);
 }
 
 
 /* ------------------ experience ---------------- */
 #experience {
-  background-color: #ffdada;
+  background-color: var(--pink);
   padding: 120px 0;
 }
 
 .exp-container {
-  background-color: #34396b;
+  background-color: var(--neon-purple);
 }
 
 .exp-heading-container > h6 {
-  color: #ffdada;
+  color: var(--pink);
 }
 
 .exp-heading-container > h3 {
-  color: #ffec64;
+  color: var(--yellow);
 }
 
 .exp-body {
-  color: #f5f5f5;
+  color: var(--white);
 }
 
 .exp-divider {
-  border: 2px solid #533e76;
+  border: 2px solid var(--dark-purple);
 }
 
 /* ---------- Aggie Coding Club ----------- */
 #aggie-coding-club {
-  background-color: #533e76;
+  background-color: var(--dark-purple);
   padding: 120px 0;
 }
 
 .acc-section-header {
-  color: #f5f5f5;
+  color: var(--white);
 }
 
 .acc-container {
-  background-color: #ffdada;
+  background-color: var(--pink);
 }
 
 .acc-heading-container > h6 {
-  color: #9c626f;
+  color: var(--off-pink);
 }
 
 .acc-heading-container > h3 {
-  color: #1a1b25;
+  color: var(--black);
 }
 
 .acc-body {
-  color: #1a1b25;
+  color: var(--black);
 }
 
 .acc-divider {
-  border: 2px solid #9c626f;
+  border: 2px solid var(--off-pink);
 }
 
 /*  ----------------- Footer -------------- */
 footer {
-  background-color: #1a1b25;
+  background-color: var(--black);
   padding: 50px 70px;
   display: flex;
   align-items: center;
