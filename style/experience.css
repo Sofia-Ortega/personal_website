@@ -1,0 +1,26 @@
+/* ------------------ experience ---------------- */
+#experience {
+  background-color: var(--pink);
+  padding: 120px 0;
+}
+
+.exp-container {
+  background-color: var(--neon-purple);
+}
+
+.exp-heading-container > h6 {
+  color: var(--pink);
+}
+
+.exp-heading-container > h3 {
+  color: var(--yellow);
+}
+
+.exp-body {
+  color: var(--white);
+}
+
+.exp-divider {
+  border: 2px solid var(--dark-purple);
+}
+

@@ -1,0 +1,64 @@
+
+nav {
+  background-color: var(--black);
+  color: var(--blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+}
+
+#links > * {
+  margin: 10px;
+}
+
+#logo {
+  font-size: 52px;
+}
+
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.chip {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 0px 10px;
+  text-align: center;
+  font-family: "Kadwa";
+  height: 1.5rem;
+}
+
+/* -------------- Intro ---------------- */
+#intro {
+  text-align: center;
+  background-color: var(--neon-purple);
+  height: 100vh;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro > h1 {
+  color: var(--white);
+}
+
+.blurb > p {
+  color: var(--pink);
+  max-width: 700px;
+}
+
+.blurb {
+  text-transform: none;
+  margin-top: -10px;
+}
