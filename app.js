@@ -40,6 +40,20 @@ const observer = new IntersectionObserver((entries) => {
 
 hiddenTransitionUpElements.forEach((el) => observer.observe(el))
 
+const hiddenTransitionRight = document.querySelectorAll('.box-container');
+
+const transitionRightObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show-box-container');
+        } else {
+            entry.target.classList.remove('show-box-container')
+        }
+    })
+})
+
+hiddenTransitionRight.forEach((el) => transitionRightObserver.observe(el))
+
 
 // ******************** PROJECTS *********************
 /**
@@ -105,7 +119,7 @@ const observerProjectCards = new IntersectionObserver((entries) => {
         } else {
             setTranslationDistance(projectContainers, CARD_SHIFT );
             setRotationDegree(projectContainers, ROTATION_DEGREES);
-            
+
             addClass(projectContainers, 'project-hidden')
             removeClass(projectContainers, 'project-show')
         }
