@@ -82,10 +82,12 @@ const observerProjectCards = new IntersectionObserver((entries) => {
 
         if (entry.isIntersecting) {
             addRippleTransitionDelay(projectContainers, 400);
+            addLeftRipple(projectContainers, 0);
             addClass(projectContainers, 'project-show')
             removeClass(projectContainers, 'project-hidden')
             
         } else {
+            addLeftRipple(projectContainers, CARD_SHIFT );
             removeTransitionDelay(projectContainers);
             addClass(projectContainers, 'project-hidden')
             removeClass(projectContainers, 'project-show')

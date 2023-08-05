@@ -35,8 +35,8 @@
   left: var(--translation-distance);
   transition: 
     transform 0.5s ease, 
-    opacity 0.5s ease-in-out var(--transition-delay),
-    left 0.2s ease-in-out 50ms;
+    opacity 0.5s ease-in-out 100ms,
+    left 0.5s ease-in-out 100ms;
 
 
 }
@@ -46,7 +46,7 @@
 }
 
 .project-hidden {
-  opacity: 0;
+  opacity: 0.2;
 
 
 }
