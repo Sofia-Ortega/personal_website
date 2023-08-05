@@ -31,15 +31,23 @@
   height: 300px;
   margin: 2px;
   border: 1px solid black;
+  position: relative;
+  left: 0;
   transition: 
     transform 0.5s ease, 
-    opacity 0.5s ease-in-out var(--transition-delay);
+    opacity 0.5s ease-in-out var(--transition-delay),
+    left 0.5s ease-in-out var(--transition-delay);
 
 
 }
 
+.left {
+  left: -200px;
+}
+
 .project-hidden {
   opacity: 0;
+
 
 }
 .project-show {

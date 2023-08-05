@@ -41,11 +41,29 @@ function removeClass(arrayOfHtmlElements, className) {
 }
 
 
-const projectSection = document.querySelector("#project-list");
-const projectContainers = document.querySelectorAll('#project-list .project-container');
+
 
 const projectHiddenClass = "project-hidden";
 const projectShowClass = "project-show";
+
+const projectList = document.querySelector("#project-list");
+const projectContainers = document.querySelectorAll('#project-list .project-container');
+
+
+const button = document.getElementById("projects-button")
+var toggle = true;
+button.addEventListener('click', () => {
+  console.log("here")
+  if (toggle) {
+    addClass(projectContainers, "left")
+  } else {
+    removeClass(projectContainers, "left");
+  }
+
+  toggle = !toggle;
+})
+
+
 
 const observerProjectCards = new IntersectionObserver((entries) => {
     console.log("observer project cards")
@@ -66,4 +84,4 @@ const observerProjectCards = new IntersectionObserver((entries) => {
 })
 
 
-observerProjectCards.observe(projectSection);
+observerProjectCards.observe(projectList);
