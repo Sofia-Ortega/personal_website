@@ -13,22 +13,40 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el))
 
-const projectSection = document.querySelector("#projects");
-const projectContainers = document.querySelectorAll('#project-list .project-container');
-projectContainers.forEach((container, index) => {
-  container.style.transitionDelay = `${index * 400}ms`;
-});
 
+
+// ******************** PROJECTS *********************
+function addRippleTransition(arrayOfHtmlElements, delay) {
+  arrayOfHtmlElements.forEach((elem, index) => {
+    elem.style.transitionDelay = `${index * delay}ms`
+  });
+}
+
+function removeTransition(arrayOfHtmlElements) {
+  arrayOfHtmlElements.forEach((elem, index) => {
+    elem.style.transitionDelay = `0ms`; 
+  });
+}
+
+const projectSection = document.querySelector("#project-list");
+const projectContainers = document.querySelectorAll('#project-list .project-container');
+
+// addRippleTransition(projectContainers, 400);
 
 const observerProjectCards = new IntersectionObserver((entries) => {
-    console.log("objserver project cards")
+    console.log("observer project cards")
     entries.forEach((entry) => {
 
         if (entry.isIntersecting) {
-            console.log("intersects")
-            projectContainers.forEach((container) => container.style.opacity = 1)
+            projectContainers.forEach((container) => {
+              addRippleTransition(projectContainers, 400);
+              container.style.opacity = 1
+            })
         } else {
-            projectContainers.forEach((container) => container.style.opacity = 0)
+            projectContainers.forEach((container) => {
+              removeTransition(projectContainers);
+              container.style.opacity = 0
+            })
         }
 
     })

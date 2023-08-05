@@ -22,6 +22,11 @@
   gap: 12px;
 }
 
+#project-list .project-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .project-container {
   background-color: var(--dark-purple);
   color: var(--white);
