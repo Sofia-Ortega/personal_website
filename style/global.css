@@ -43,17 +43,12 @@
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s; */
-  /* border: 10px solid pink; */
 }
 
 .show {
-  opacity: 1;
+  /* opacity: 1;
   filter: blur(0);
-  transform: translateX(0);
-}
-
-section {
-  /* border: 10px solid var(--black); */
+  transform: translateX(0); */
 }
 
 body {

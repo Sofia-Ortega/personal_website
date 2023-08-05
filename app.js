@@ -1,7 +1,6 @@
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if(entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {
@@ -16,37 +15,51 @@ hiddenElements.forEach((el) => observer.observe(el))
 
 
 // ******************** PROJECTS *********************
-function addRippleTransition(arrayOfHtmlElements, delay) {
+function addRippleTransitionDelay(arrayOfHtmlElements, delay) {
   arrayOfHtmlElements.forEach((elem, index) => {
-    elem.style.transitionDelay = `${index * delay}ms`
+    elem.style.setProperty('--transition-delay', `${index * delay}ms`);
   });
 }
 
-function removeTransition(arrayOfHtmlElements) {
-  arrayOfHtmlElements.forEach((elem, index) => {
-    elem.style.transitionDelay = `0ms`; 
+function removeTransitionDelay(arrayOfHtmlElements) {
+  arrayOfHtmlElements.forEach((elem) => {
+    elem.style.setProperty('--transition-delay', `0ms`);
   });
 }
+
+function addClass(arrayOfHtmlElements, className) {
+  arrayOfHtmlElements.forEach((elem) => {
+    elem.classList.add(className);
+  })
+}
+
+function removeClass(arrayOfHtmlElements, className) {
+  arrayOfHtmlElements.forEach((elem) => {
+    elem.classList.remove(className);
+  })
+
+}
+
 
 const projectSection = document.querySelector("#project-list");
 const projectContainers = document.querySelectorAll('#project-list .project-container');
 
-// addRippleTransition(projectContainers, 400);
+const projectHiddenClass = "project-hidden";
+const projectShowClass = "project-show";
 
 const observerProjectCards = new IntersectionObserver((entries) => {
     console.log("observer project cards")
     entries.forEach((entry) => {
 
         if (entry.isIntersecting) {
-            projectContainers.forEach((container) => {
-              addRippleTransition(projectContainers, 400);
-              container.style.opacity = 1
-            })
+            addRippleTransitionDelay(projectContainers, 400);
+            addClass(projectContainers, 'project-show')
+            removeClass(projectContainers, 'project-hidden')
+            
         } else {
-            projectContainers.forEach((container) => {
-              removeTransition(projectContainers);
-              container.style.opacity = 0
-            })
+            removeTransitionDelay(projectContainers);
+            addClass(projectContainers, 'project-hidden')
+            removeClass(projectContainers, 'project-show')
         }
 
     })
