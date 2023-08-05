@@ -15,23 +15,26 @@ hiddenElements.forEach((el) => observer.observe(el))
 
 
 // ******************** PROJECTS *********************
-function addRippleTransitionDelay(arrayOfHtmlElements, delay) {
-  arrayOfHtmlElements.forEach((elem, index) => {
-    elem.style.setProperty('--transition-delay', `${index * delay}ms`);
-  });
-}
-
-function addLeftRipple(arrayOfHtmlElements, shift) {
+function addRipple(arrayOfHtmlElements, shift) {
   arrayOfHtmlElements.forEach((elem, index) => {
     elem.style.setProperty('--translation-distance', `${index * shift}px` )
+    elem.style.setProperty('--rotate-deg', `0deg` )
   })
 }
 
+function addRotation(arrayOfHtmlElements) {
+  const degrees = [1, 7, -7]
+  arrayOfHtmlElements.forEach((elem, index) => {
+    elem.style.setProperty('--rotate-deg', `${degrees[index]}deg`);
+  })
+}
 
-function removeTransitionDelay(arrayOfHtmlElements) {
+function removeRotation(arrayOfHtmlElements) {
+  console.log("here")
   arrayOfHtmlElements.forEach((elem) => {
-    elem.style.setProperty('--transition-delay', `0ms`);
-  });
+    elem.style.setProperty('--rotate-deg', `0deg`);
+  })
+
 }
 
 function addClass(arrayOfHtmlElements, className) {
@@ -57,40 +60,25 @@ const projectList = document.querySelector("#project-list");
 const projectContainers = document.querySelectorAll('#project-list .project-container');
 
 // add initial left properties:
-const CARD_SHIFT = -300
-addLeftRipple(projectContainers, CARD_SHIFT);
-
-
-const button = document.getElementById("projects-button")
-var toggle = true;
-button.addEventListener('click', () => {
-  console.log("here")
-  if (toggle) {
-    addLeftRipple(projectContainers, 0 );
-  } else {
-    addLeftRipple(projectContainers, CARD_SHIFT );
-  }
-
-  toggle = !toggle;
-})
-
-
+const CARD_SHIFT = -375;
+addRipple(projectContainers, CARD_SHIFT);
+addRotation(projectContainers);
 
 const observerProjectCards = new IntersectionObserver((entries) => {
     console.log("observer project cards")
     entries.forEach((entry) => {
 
         if (entry.isIntersecting) {
-            addRippleTransitionDelay(projectContainers, 400);
-            addLeftRipple(projectContainers, 0);
+            addRipple(projectContainers, 0);
             addClass(projectContainers, 'project-show')
             removeClass(projectContainers, 'project-hidden')
+            removeRotation(projectContainers);
             
         } else {
-            addLeftRipple(projectContainers, CARD_SHIFT );
-            removeTransitionDelay(projectContainers);
+            addRipple(projectContainers, CARD_SHIFT );
             addClass(projectContainers, 'project-hidden')
             removeClass(projectContainers, 'project-show')
+            addRotation(projectContainers);
         }
 
     })
