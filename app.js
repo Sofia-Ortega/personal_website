@@ -21,6 +21,13 @@ function addRippleTransitionDelay(arrayOfHtmlElements, delay) {
   });
 }
 
+function addLeftRipple(arrayOfHtmlElements, shift) {
+  arrayOfHtmlElements.forEach((elem, index) => {
+    elem.style.setProperty('--translation-distance', `${index * shift}px` )
+  })
+}
+
+
 function removeTransitionDelay(arrayOfHtmlElements) {
   arrayOfHtmlElements.forEach((elem) => {
     elem.style.setProperty('--transition-delay', `0ms`);
@@ -49,15 +56,19 @@ const projectShowClass = "project-show";
 const projectList = document.querySelector("#project-list");
 const projectContainers = document.querySelectorAll('#project-list .project-container');
 
+// add initial left properties:
+const CARD_SHIFT = -300
+addLeftRipple(projectContainers, CARD_SHIFT);
+
 
 const button = document.getElementById("projects-button")
 var toggle = true;
 button.addEventListener('click', () => {
   console.log("here")
   if (toggle) {
-    addClass(projectContainers, "left")
+    addLeftRipple(projectContainers, 0 );
   } else {
-    removeClass(projectContainers, "left");
+    addLeftRipple(projectContainers, CARD_SHIFT );
   }
 
   toggle = !toggle;

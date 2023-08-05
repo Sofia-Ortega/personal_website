@@ -32,11 +32,11 @@
   margin: 2px;
   border: 1px solid black;
   position: relative;
-  left: 0;
+  left: var(--translation-distance);
   transition: 
     transform 0.5s ease, 
     opacity 0.5s ease-in-out var(--transition-delay),
-    left 0.5s ease-in-out var(--transition-delay);
+    left 0.2s ease-in-out 50ms;
 
 
 }
