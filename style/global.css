@@ -1,0 +1,93 @@
+
+/* --------------- Config ---------------- */
+.box-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 250px;
+  margin: 0 10px;
+}
+
+.box-content {
+  padding: 30px;
+}
+
+.box-heading-container > h3 {
+  margin-top: -16px;
+}
+
+@media (max-width: 768px) {
+  .box-container {
+    width: auto;
+    height: 360px;
+    margin: 0 5px;
+  }
+}
+
+.divider {
+  height: 100px;
+  width: 0;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 128px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.section-header {
+  padding: 0 0 60px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 728px) {
+  .no-small-display {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .no-medium-display {
+    display: none;
+  }
+}

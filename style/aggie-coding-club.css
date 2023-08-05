@@ -1,0 +1,44 @@
+
+/* ---------- Aggie Coding Club ----------- */
+#aggie-coding-club {
+  background-color: var(--dark-purple);
+  padding: 120px 0;
+}
+
+.acc-section-header {
+  color: var(--white);
+}
+
+.acc-container {
+  background-color: var(--pink);
+}
+
+.acc-heading-container > h6 {
+  color: var(--off-pink);
+}
+
+.acc-heading-container > h3 {
+  color: var(--black);
+}
+
+.acc-body {
+  color: var(--black);
+}
+
+.acc-divider {
+  border: 2px solid var(--off-pink);
+}
+
+/*  ----------------- Footer -------------- */
+footer {
+  background-color: var(--black);
+  padding: 50px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > * {
+  margin: 0 20px;
+  cursor: pointer;
+}
