@@ -7,6 +7,13 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/constants.css" />
     <link rel="stylesheet" href="style/global.css" />
@@ -42,16 +49,23 @@
         </div>
       </nav>
       <section id="intro">
-        <h1 class="hidden-transition-up">i code</h1>
+        <h1 class="hidden-transition-up">i seek</h1>
         <div class="blurb hidden-transition-up">
-          <p>computer Engineer - Texas A&M '24</p>
-          <p>i know what i'm doing, but i suck at leetcode</p>
+          <p>to get a <b>SWE</b> job</p>
+          <p>
+            to graduate as a Texas A&M <b>Computer Engineer</b>, Math Minor
+            <b>'24</b>
+          </p>
+          <p>to <b>CRUSH</b> my buggy enemies - both real & virtual</p>
         </div>
       </section>
     </header>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>i code</h2>
+      <p class="projects-one-liner blurb">
+        i may suck at leetcode, but i know what i'm doing
+      </p>
       <div id="project-list">
         <div class="project-container project-hidden">
           <a href="https://github.com/aggie-coding-club/Gesture">
@@ -66,10 +80,9 @@
                 technologies
               </p>
               <div class="chip-container">
-                <div class="chip">React.js</div>
-                <div class="chip">html</div>
-                <div class="chip">css</div>
-                <div class="chip">js</div>
+                <div class="chip">react.js</div>
+                <div class="chip">flask.py</div>
+                <div class="chip">electron.js</div>
               </div>
             </div>
           </a>
@@ -87,10 +100,7 @@
                 maintainable code.
               </p>
               <div class="chip-container">
-                <div class="chip">React.js</div>
-                <div class="chip">html</div>
-                <div class="chip">css</div>
-                <div class="chip">js</div>
+                <div class="chip">react.js</div>
               </div>
             </div>
           </a>
@@ -103,14 +113,12 @@
                 <img src="assets/link-icon.svg" alt="launch website" />
               </div>
               <p class="project-blurb blurb">
-                Personal project creating a modern personal recepie book using
-                react, and electron.js.
+                Personal project creating a modern personal recepie book.
+                Created to improve React skills, and learn about Component State
               </p>
               <div class="chip-container">
-                <div class="chip">React.js</div>
-                <div class="chip">html</div>
-                <div class="chip">css</div>
-                <div class="chip">js</div>
+                <div class="chip">react.js</div>
+                <div class="chip">electron.js</div>
               </div>
             </div>
           </a>
@@ -119,133 +127,178 @@
     </section>
 
     <section id="experience">
-      <h2 class="text-center section-header">Experience</h2>
+      <div class="section-header">
+        <h2>i work</h2>
+        <p>Unbenownst to my college-broke wallet</p>
+      </div>
       <div class="box-list">
         <div class="box-container exp-container">
-          <div class="box-content">
-            <div class="box-heading-container exp-heading-container">
-              <h6 class="capitalize">Summer 2022</h6>
-              <h3>Text-Em-All Internship</h3>
-            </div>
-            <div class="exp-body blurb">
-              <p>
-                Created one of most requested feature, text to speech. Gained
-                experience at small giants company creating pitches, clean code,
-                and unit tests using React.js, Redux, Jest.js
-              </p>
-            </div>
+          <div class="box-heading-container exp-heading-container">
+            <h6 class="capitalize">Summer 2023</h6>
+            <h3>pariveda SWE internship</h3>
+          </div>
+          <div class="exp-body blurb">
+            <p>
+              Made data collection app in a 6 person team. Created seamless data
+              flow from UI to the cloud to the sql database. Coded numerous
+              cloud functions.
+            </p>
+          </div>
+          <div class="chip-container">
+            <div class="chip">angular.js</div>
+            <div class="chip">google cloud</div>
+            <div class="chip">mySQL</div>
+            <div class="chip">node.js</div>
           </div>
         </div>
 
         <div class="divider exp-divider"></div>
 
         <div class="box-container exp-container">
-          <div class="box-content">
-            <div class="box-heading-container exp-heading-container">
-              <h6 class="capitalize">Fall 2022 - Now</h6>
-              <h3>teacher assistant</h3>
-            </div>
-            <div class="exp-body blurb">
-              <p>
-                Assistant teacher for "Data Structures and Algorithms". Prepare
-                weekly reviews of lectures and lead labs and hold office hours.
-                Introduce students to deeper C++ concepts
-              </p>
-            </div>
+          <div class="box-heading-container exp-heading-container">
+            <h6 class="capitalize">Summer 2022</h6>
+            <h3>text-em-all SWE internship</h3>
+          </div>
+          <div class="exp-body blurb">
+            <p>
+              Created highly requested feature, text to speech. Gained
+              experience at small giants company creating pitches, clean code,
+              and unit tests.
+            </p>
+          </div>
+          <div class="chip-container">
+            <div class="chip">react.js</div>
+            <div class="chip">redux</div>
+            <div class="chip">jest.js</div>
           </div>
         </div>
 
         <div class="divider exp-divider"></div>
 
         <div class="box-container exp-container">
-          <div class="box-content">
-            <div class="box-heading-container exp-heading-container">
-              <h6 class="capitalize">Spring 2022</h6>
-              <h3>Computer Science Peer Teacher</h3>
-            </div>
-            <div class="exp-body">
-              <p>
-                Provide tutoring for Computer Science classes of all types, with
-                a focus in C++. Help with a wide variety of coding issues.
-                Requires good debugging skills and great communication along
-                with interpersonal skills.
-              </p>
-            </div>
+          <div class="box-heading-container exp-heading-container">
+            <h6 class="capitalize">Fall 2022 - Now</h6>
+            <h3>teacher assistant</h3>
+          </div>
+          <div class="exp-body blurb">
+            <p>
+              Teacher assistant for "Data Structures and Algorithms" in C++. Prepare
+              weekly reviews of lectures and lead labs and hold office hours, defeating
+              bugs along the way.
+            </p>
+          </div>
+          <div class="chip-container">
+            <div class="chip">c++</div>
+            <div class="chip">teaching</div>
+            <div class="chip">communication</div>
+            <div class="chip">debugging</div>
           </div>
         </div>
 
         <div class="divider exp-divider"></div>
 
         <div class="box-container exp-container">
-          <div class="box-content">
-            <div class="box-heading-container exp-heading-container">
-              <h6 class="capitalize">Fall 2021</h6>
-              <h3>medical start up</h3>
-            </div>
-            <div class="exp-body blurb">
-              <p>
-                Created patient based app to facilitate clinical trials. Worked
-                on Frontend Development using React and Jest Unit Testing.
-              </p>
-            </div>
+          <div class="box-heading-container exp-heading-container">
+            <h6 class="capitalize">Spring 2022</h6>
+            <h3>computer science peer teacher</h3>
+          </div>
+          <div class="exp-body blurb">
+            <p>
+              Provide tutoring for Computer Science classes of all types, with a
+              focus in C++. Students helped: hundreds. Bugs crushed: thousands.
+            </p>
+          </div>
+          <div class="chip-container">
+            <div class="chip">c++</div>
+            <div class="chip">teaching</div>
+            <div class="chip">debugging</div>
+          </div>
+        </div>
+
+        <div class="divider exp-divider"></div>
+
+        <div class="box-container exp-container">
+          <div class="box-heading-container exp-heading-container">
+            <h6 class="capitalize">Fall 2021</h6>
+            <h3>medical start up</h3>
+          </div>
+          <div class="exp-body blurb">
+            <p>
+              Created patient based app to facilitate clinical trials. 
+              Developed entire web pages from scratch, following figma mock-ups
+            </p>
+          </div>
+          <div class="chip-container">
+            <div class="chip">react.js</div>
+            <div class="chip">jest.js</div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="aggie-coding-club">
-      <h2 class="text-center acc-section-header section-header">
-        aggie coding club
-      </h2>
+      <div class="section-header">
+        <h2>i lead</h2>
+        <p>Aggie Coding Club</p>
+      </div>
       <div class="box-list">
         <div class="box-container acc-container">
-          <div class="box-content">
-            <div class="box-heading-container acc-heading-container">
-              <h6 class="capitalize">Spring 2021 - Now</h6>
-              <h3>Workshop Officer</h3>
-            </div>
-            <div class="box-body acc-body">
-              <p>
-                Lead team of officers to create weekly workshops on diverse
-                coding topics to teach group of about 100 students. Requires
-                good communication adn quick learning skills
-              </p>
-            </div>
+          <div class="box-heading-container acc-heading-container">
+            <h6 class="capitalize">Summer 2023 - Now</h6>
+            <h3>Aggie Coding Club President</h3>
+          </div>
+          <div class="box-body acc-body">
+            <p>
+              Lead biggest college coding club in the U.S. with 2000 members.
+              Raised thousands of dollar from company sponsors. Fostered + lead
+              team of 15 officers. Focused on member-first approach.
+            </p>
+          </div>
+          <div class="chip-container">
+            <div class="chip">leadership</div>
+            <div class="chip">communication</div>
+            <div class="chip">adaptability</div>
           </div>
         </div>
 
         <div class="divider acc-divider"></div>
 
         <div class="box-container acc-container">
-          <div class="box-content">
-            <div class="box-heading-container acc-heading-container">
-              <h6 class="capitalize">Spring 2021</h6>
-              <h3>Co-Project Manager</h3>
-            </div>
-            <div class="box-body acc-body">
-              <p>
-                For "Gesture" project. Lead team of about 10 students in
-                creating frontend UI and testing backend
-              </p>
-            </div>
+          <div class="box-heading-container acc-heading-container">
+            <h6 class="capitalize">Spring 2021 - Spring 2023</h6>
+            <h3>Aggie Coding Club Workshop Officer</h3>
+          </div>
+          <div class="box-body acc-body">
+            <p>
+              Lead team of officers to create weekly workshops on diverse coding
+              topics to teach group of about 100 students.
+            </p>
+          </div>
+          <div class="chip-container">
+            <div class="chip">leadership</div>
+            <div class="chip">teaching</div>
+            <div class="chip">quick learning</div>
           </div>
         </div>
 
         <div class="divider acc-divider"></div>
 
         <div class="box-container acc-container">
-          <div class="box-content">
-            <div class="box-heading-container acc-heading-container">
-              <h6 class="capitalize">Fall 2020</h6>
-              <h3>Member</h3>
-            </div>
-            <div class="box-body acc-body">
-              <p>
-                Participated in ACC projects and workshops, since first semester
-                at A&M, meeting new people and always learning new coding
-                technologies
-              </p>
-            </div>
+          <div class="box-heading-container acc-heading-container">
+            <h6 class="capitalize">Spring 2021</h6>
+            <h3>Co-Project Manager</h3>
+          </div>
+          <div class="box-body acc-body">
+            <p>
+              For "Gesture" project. Lead team of 10+ students in creating
+              frontend UI and testing backend. Maintained project-scope and adopted 
+              user-first outlook.
+            </p>
+          </div>
+          <div class="chip-container">
+            <div class="chip">adaptability</div>
+            <div class="chip">collaboration</div>
+            <div class="chip">communication</div>
           </div>
         </div>
       </div>

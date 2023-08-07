@@ -5,8 +5,8 @@
   padding: 120px 0;
 }
 
-.acc-section-header {
-  color: var(--white);
+#aggie-coding-club > .section-header {
+  color: var(--white)
 }
 
 .acc-container {
@@ -23,6 +23,10 @@
 
 .acc-body {
   color: var(--black);
+}
+
+.acc-container > .chip-container > .chip {
+  background-color: var(--dark-pink);
 }
 
 .acc-divider {
