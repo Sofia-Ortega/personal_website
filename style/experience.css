@@ -4,6 +4,10 @@
   padding: 120px 0;
 }
 
+#experience > .section-header {
+  color: var(--black);
+}
+
 .exp-container {
   background-color: var(--neon-purple);
 }

@@ -14,6 +14,11 @@
   text-align: center;
 }
 
+.projects-one-liner {
+  margin: -30px 0 30px 0;
+  color: var(--pink);
+}
+
 #project-list {
   display: flex;
   justify-content: center;
