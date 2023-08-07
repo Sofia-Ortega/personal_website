@@ -25,6 +25,10 @@
   color: var(--black);
 }
 
+.acc-container > .chip-container > .chip {
+  background-color: var(--dark-pink);
+}
+
 .acc-divider {
   border: 2px solid var(--off-pink);
 }

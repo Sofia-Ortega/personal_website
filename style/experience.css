@@ -12,6 +12,7 @@
   background-color: var(--neon-purple);
 }
 
+
 .exp-heading-container > h6 {
   color: var(--pink);
 }
@@ -22,6 +23,11 @@
 
 .exp-body {
   color: var(--white);
+}
+
+.exp-container > .chip-container > .chip {
+  background-color: var(--dark-blue);
+  color: var(--white)
 }
 
 .exp-divider {
