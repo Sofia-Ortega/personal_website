@@ -79,9 +79,7 @@ const projectHiddenClass = "project-hidden";
 const projectShowClass = "project-show";
 
 const projectList = document.querySelector("#project-list");
-const projectContainers = document.querySelectorAll(
-  "#project-list .project-container"
-);
+const projectContainers = document.querySelectorAll(".project-container");
 
 // add initial left properties:
 const CARD_SHIFT = -375;

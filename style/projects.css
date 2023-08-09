@@ -72,7 +72,31 @@
   line-height: 1.5rem;
 }
 
-.project-content > .chip-container > div {
+.project-card-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.project-card-headers {
+  text-align: center;
+  margin: 30px 0;
+
+}
+
+.project-card-heading {
+  color: var(--white);
+}
+
+.project-card-subheading {
+  margin-top: -15px;
+  color: var(--pink)
+
+}
+
+.project-chip-container > .chip {
   background-color: var(--neon-purple);
   color: var(--white);
 }
