@@ -81,6 +81,22 @@ const projectShowClass = "project-show";
 const projectList = document.querySelector("#project-list");
 const projectContainers = document.querySelectorAll(".project-container");
 
+// ****** Hover ********
+projectContainers.forEach(container => {
+  container.addEventListener('mouseenter', () => {
+    container.classList.add('expanded');
+  })
+})
+
+
+projectContainers.forEach(container => {
+  container.addEventListener('mouseleave', () => {
+    container.classList.remove('expanded');
+  })
+})
+
+// ******** Start Animation *********
+
 // add initial left properties:
 const CARD_SHIFT = -375;
 const ROTATION_DEGREES = [1, 7, -7];

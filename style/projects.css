@@ -1,5 +1,9 @@
 /* ------------------ projects ---------------- */
 #projects {
+  --transform-up: -50px;
+
+
+
   background-color: var(--black);
   min-height: 100vh;
   padding: 50px 50px;
@@ -27,60 +31,60 @@
 }
 
 .project-container {
+  --card-height: 300px;
+  position: relative;
   width: 350px;
-  height: 300px;
+  height: var(--card-height);
   margin: 2px;
   position: relative;
   left: var(--translation-distance);
   transform: rotateZ(var(--rotate-deg));
-  transition: transform 0.5s ease, opacity 0.7s ease-in-out 150ms,
-    left 0.5s cubic-bezier(0.63, 0.15, 0.03, 1.02) 150ms;
+  transition: 
+    transform 0.5s ease, 
+    opacity 0.7s ease-in-out 150ms,
+    left 0.5s cubic-bezier(0.63, 0.15, 0.03, 1.02) 150ms,
+    height 0.5s ease
 }
 
-.project-hidden {
-  opacity: 0.2;
-}
-
-.project-show {
-  opacity: 1;
-}
-
-.project-container:hover {
-  /* transform: scale(1.1); */
-}
-
-.project-content {
-  display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
-  padding: 30px;
-}
-
-.project-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--pink);
-}
-
-.project-blurb {
+.purple-square {
+  background-color: var(--purple);
   color: var(--white);
-  padding-top: 10px;
-  line-height: 1.5rem;
+  height: 100%;
+  transition: transform 0.5s ease;
+  
+}
+
+.purple-square:hover {
+  transform: translate(5px, -10px);
+}
+
+.pink-square {
+  position: absolute;
+  width: 350px;
+  height: 100%;
+  background-color:  pink ;
+  z-index: -1;
+  top: 5px;
+  left: -5px;
+  transition: height 0.5s ease
 }
 
 .project-card-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  text-align: center;
+  padding: 40px 0;
+  transition: 
+    margin 0.3s ease,
+    transform 0.3s ease;
 }
+
+.project-container.expanded:hover .project-card-banner {
+  margin: 0;
+  transform: translateY(var(--transform-up));
+} 
 
 .project-card-headers {
   text-align: center;
   margin: 30px 0;
-
 }
 
 .project-card-heading {
@@ -93,31 +97,36 @@
 
 }
 
+.project-chip-container {
+  justify-content: center;
+}
+
 .project-chip-container > .chip {
   background-color: var(--dark-purple);
   color: var(--white);
 }
 
-.purple-square {
-  background-color: var(--purple);
+.project-card-content {
+  display: none;
   color: var(--white);
-  width: 100%;
-  height: 100%;
-  background-color: var(--purple);
-  transition: transform 0.5s ease;
-
+  padding: 10px 20px;
+  line-height: 1.5rem;
+  transform: translateY(var(--transform-up))
 }
 
-.pink-square {
-  position: absolute;
-  width: 350px;
-  height: 300px;
-  background-color:  pink ;
-  z-index: -1;
-  top: 5px;
-  left: -5px;
+.project-container.expanded:hover .project-card-content {
+  display: block;
+  opacity: 1;
 }
 
-.purple-square:hover {
-  transform: translate(10px, -10px);
+.expanded {
+  height: 400px;
+}
+
+.project-hidden {
+  opacity: 0.2;
+}
+
+.project-show {
+  opacity: 1;
 }
