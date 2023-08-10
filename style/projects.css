@@ -50,6 +50,11 @@
   background-color: var(--purple);
   color: var(--white);
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   transition: transform 0.5s ease;
   
 }
@@ -99,6 +104,11 @@
 
 .project-chip-container {
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.project-container.expanded:hover .project-chip-container {
+  transform: translateY(-20px);
 }
 
 .project-chip-container > .chip {
@@ -109,7 +119,7 @@
 .project-card-content {
   display: none;
   color: var(--white);
-  padding: 10px 20px;
+  padding: 0px 20px;
   line-height: 1.5rem;
   transform: translateY(var(--transform-up))
 }
